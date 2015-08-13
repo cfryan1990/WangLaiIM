@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/me_detail"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dip"
+        android:layout_marginLeft="8dip"
+        android:layout_marginTop="40dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/iv_me_avtar"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_margin="3dip"
+            android:background="@drawable/ic_yiliao" />
+
+        <TextView
+            android:id="@+id/tv_me_alias"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="5dip"
+            android:gravity="center_vertical"
+            android:paddingBottom="10dip"
+            android:paddingTop="10dip"
+            android:text="Beem1"
+            android:textColor="#000000"
+            android:textSize="15dip" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.3dip"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:layout_marginTop="8dip"
+        android:background="@color/bottom_item_line_color" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" 
+        android:background="@drawable/common_item_bottom">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/me_two_dimensional_code"
+            android:gravity="center_vertical"
+            android:paddingBottom="15dip"
+            android:paddingTop="15dip"
+            android:paddingLeft="5dip"
+            android:text="我的二维码"
+            android:textColor="#000000"
+            android:textSize="15dip" />
+        <ImageView
+            android:layout_width="14.0dip"
+            android:layout_height="14.0dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8.0dip"
+            android:duplicateParentState="true"
+            android:src="@drawable/common_arrow_right_selector" />
+
+        <ImageView
+            android:id="@+id/me_two_dimensional_code"
+            android:layout_width="25dip"
+            android:layout_height="25dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dip"
+            android:background="@drawable/my_qr_code_icon" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.3dip"
+        android:layout_marginLeft="50dip"
+        android:layout_marginRight="10dip"
+        android:background="@color/bottom_item_line_color" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:background="@drawable/common_item_bottom" >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/me_product"
+            android:gravity="center_vertical"
+            android:paddingBottom="15dip"
+            android:paddingTop="15dip"
+            android:paddingLeft="5dip"
+            android:text="我的产品"
+            android:textColor="#000000"
+            android:textSize="15dip" />
+        <ImageView
+            android:layout_width="14.0dip"
+            android:layout_height="14.0dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8.0dip"
+            android:duplicateParentState="true"
+            android:src="@drawable/common_arrow_right_selector" />
+
+        <ImageView
+            android:id="@+id/me_product"
+            android:layout_width="25dip"
+            android:layout_height="25dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dip"
+            android:background="@drawable/my_home_page_icon" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.3dip"
+        android:layout_marginLeft="50dip"
+        android:layout_marginRight="15dip"
+        android:background="@color/bottom_item_line_color" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" 
+        android:background="@drawable/common_item_bottom">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/me_favorites"
+            android:gravity="center_vertical"
+            android:paddingBottom="15dip"
+            android:paddingTop="15dip"
+            android:paddingLeft="5dip"
+            android:text="我的收藏"
+            android:textColor="#000000"
+            android:textSize="15dip" />
+         <ImageView
+            android:layout_width="14.0dip"
+            android:layout_height="14.0dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8.0dip"
+            android:duplicateParentState="true"
+            android:src="@drawable/common_arrow_right_selector" />
+
+         <ImageView
+             android:id="@+id/me_favorites"
+             android:layout_width="25dip"
+             android:layout_height="25dip"
+             android:layout_alignParentLeft="true"
+             android:layout_centerVertical="true"
+             android:layout_margin="5dip"
+             android:background="@drawable/my_favorite_icon" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.3dip"
+        android:layout_marginLeft="50dip"
+        android:layout_marginRight="15dip"
+        android:background="@color/bottom_item_line_color" />
+
+    <RelativeLayout
+        android:id="@+id/me_settings"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dip"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" 
+        android:background="@drawable/common_item_bottom">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/btn_me_setting"
+            android:gravity="center_vertical"
+            android:paddingBottom="15dip"
+            android:paddingTop="15dip"
+            android:paddingLeft="5dip"
+            android:text="设置"
+            android:textColor="#000000"
+            android:textSize="15dip" />
+        <ImageView
+            android:layout_width="14.0dip"
+            android:layout_height="14.0dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8.0dip"
+            android:duplicateParentState="true"
+            android:src="@drawable/common_arrow_right_selector" />
+
+        <ImageButton
+            android:id="@+id/btn_me_setting"
+            android:layout_width="25dip"
+            android:layout_height="25dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dip"
+            android:background="@drawable/my_setting_icon" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.3dip"
+        android:layout_marginLeft="50dip"
+        android:layout_marginRight="15dip"
+        android:background="@color/bottom_item_line_color" />
+
+</LinearLayout>

@@ -1,0 +1,75 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!--Wanglai Application theme. -->
+    <style name="Theme.Wanglai" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:actionBarStyle">@style/WanglaiActionBarStyle</item> 
+        <item name="android:actionBarTabStyle">@style/WanglaiActionBarTabStyle</item>>
+        <item name="android:actionBarTabTextStyle">@style/WanglaiActionBarTabTextStyle</item>
+        
+    </style>
+ 
+    <style name="WanglaiActionBarStyle" parent="@android:style/Widget.ActionBar">  
+    	<!-- Change action bar background color -->  
+    	<item name="android:background">@color/actionbar_background_color</item>  
+    	<item name="android:titleTextStyle">@style/WanglaiTitleTextStyle</item>
+    	
+	</style>  
+   
+    <style name="WanglaiTitleTextStyle" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">  
+    	<!-- Change action bar title color -->  
+    	<item name="android:textColor">@color/actionbar_titleText_color</item>  
+	</style>  
+	
+	<!-- action bar tab  -->
+    <style name="WanglaiActionBarTabStyle"  parent="@style/Widget.AppCompat.Light.ActionBar.TabView">
+        <item name="android:background">@drawable/wanglai_actionbar_tab_indicator</item>
+    </style>
+	
+    <!-- action bar tab text -->
+    <style name="WanglaiActionBarTabTextStyle"  parent="@style/Widget.AppCompat.ActionBar.TabText">
+        <item name="android:textColor">@color/actionbar_tabText_color</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+	
+    
+    <!-- 退出登录时的对话框设计 -->
+    <style name="common_menu_dialog_btn_style">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#ff000000</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">48.0dip</item>
+        <item name="android:layout_marginTop">18dp</item>
+        <item name="android:layout_marginBottom">20dp</item>
+    </style>
+    
+    <style name="common_menu_dialog_cancel_btn_style" parent="@style/common_menu_dialog_btn_style">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/common_btn_black_actionsheet</item>
+        <item name="android:layout_marginTop">18dp</item>
+        <item name="android:layout_marginBottom">20dp</item>
+        <item name="android:text">@string/cancel</item>
+    </style>
+    
+    <style name="common_menu_dialog_red_btn_style" parent="@style/common_menu_dialog_btn_style">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/common_btn_red_actionsheet</item>
+    </style>
+    
+    
+    
+    
+</resources>

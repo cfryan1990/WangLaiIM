@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#88000000"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="20.0dip" >
+
+    <TextView
+        style="@style/common_menu_dialog_red_btn_style"
+        android:background="#00000000"
+        android:textSize="12sp"
+        android:text="@string/exit_dialog_msg" />
+
+    <Button
+        android:id="@+id/btn_exit_comfirm"
+        style="@style/common_menu_dialog_red_btn_style" />
+
+    <Button
+        android:id="@+id/btnCancel"
+        style="@style/common_menu_dialog_cancel_btn_style" />
+
+</LinearLayout>

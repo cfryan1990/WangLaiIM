@@ -24,7 +24,7 @@ public class SplashActivity extends Activity {
 		String password = PreferenceUtils.getPrefString(this,
 				PreferenceConstants.PASSWORD, "");
 		if (!TextUtils.isEmpty(password)) {
-			mHandler.postDelayed(gotoMainAct, 1000);
+			mHandler.postDelayed(gotoLoginAct, 1000);
 			
 		} else {
 			
